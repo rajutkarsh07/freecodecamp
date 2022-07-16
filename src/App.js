@@ -20,11 +20,11 @@ function App() {
           />
           <Card
             img="img2.png"
-            rating="5.0"
-            reviewCount={30}
+            rating="4.8"
+            reviewCount={2}
             country="USA"
             title="Learn wedding photography"
-            price={125}
+            price={15}
           />
           <Card
             img="img3.png"
