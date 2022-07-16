@@ -1,43 +1,19 @@
-import "./App.css";
+import React from "react";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import Card from "./components/Card";
+import data from "./data";
 
-function App() {
+export default function App() {
+  const cards = data.map((item) => {
+    return <Card key={item.id} {...item} />;
+  });
+
   return (
-    <div className="center">
-      <div className="container">
-        <Navbar />
-        <Hero />
-        <div className="slider">
-          <Card
-            img="img1.png"
-            rating="5.0"
-            reviewCount={6}
-            country="USA"
-            title="Life lessons with Katie Zaferes"
-            price={136}
-          />
-          <Card
-            img="img2.png"
-            rating="4.8"
-            reviewCount={30}
-            country="USA"
-            title="Learn wedding photography"
-            price={125}
-          />
-          <Card
-            img="img3.png"
-            rating="5.0"
-            reviewCount={2}
-            country="USA"
-            title="Group Mountain Biking"
-            price={50}
-          />
-        </div>
-      </div>
+    <div>
+      <Navbar />
+      <Hero />
+      <section className="cards-list">{cards}</section>
     </div>
   );
 }
-
-export default App;
