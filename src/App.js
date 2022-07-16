@@ -21,10 +21,10 @@ function App() {
           <Card
             img="img2.png"
             rating="4.8"
-            reviewCount={2}
+            reviewCount={30}
             country="USA"
             title="Learn wedding photography"
-            price={15}
+            price={125}
           />
           <Card
             img="img3.png"
@@ -32,7 +32,7 @@ function App() {
             reviewCount={2}
             country="USA"
             title="Group Mountain Biking"
-            price={15}
+            price={50}
           />
         </div>
       </div>
